@@ -75,7 +75,7 @@ class Shared {
     }
     
     def Environment(String version = 'latest.integration') {
-        "gdn.rom:environment:${version}"
+        "gdn.rom:Environment:${version}"
     }
     
     static class TscgProject {

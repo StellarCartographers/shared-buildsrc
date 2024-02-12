@@ -34,7 +34,7 @@ class Shared {
     }
     
     def TinyLogApi(String version = 'latest.release') {
-        "org.tinylog:tinylog-impl:${version}"
+        "org.tinylog:tinylog-api:${version}"
     }
     
     def ClassIndex(String version = 'latest.release') {

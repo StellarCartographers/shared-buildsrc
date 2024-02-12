@@ -1,4 +1,6 @@
-package space.tscg.gradle
+ package space.tscg.gradle
+
+import org.gradle.api.artifacts.dsl.DependencyHandler
 
 class Shared {
     
@@ -22,10 +24,18 @@ class Shared {
     static TscgProject Libs() {
         new TscgProject()
     }
-    
+
     def javalinVersion = 'latest.release'
     
-    def Jackson(String version = 'latest.release') {
+    def JacksonCore(String version = 'latest.release') {
+        "com.fasterxml.jackson.core:jackson-core:${version}"
+    }
+    
+    def JacksonAnnotations(String version = 'latest.release') {
+        "com.fasterxml.jackson.core:jackson-annotations:${version}"
+    }
+    
+    def JacksonDatabind(String version = 'latest.release') {
         "com.fasterxml.jackson.core:jackson-databind:${version}"
     }
     

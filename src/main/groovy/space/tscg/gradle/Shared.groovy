@@ -77,7 +77,7 @@ class Shared {
     }
     
     def CommonsCollections4(String version = 'latest.release') {
-        "org.apache.commons:commons-lang3:${version}"
+        "org.apache.commons:commons-collections4:${version}"
     }
     
     def CommonsCodec(String version = 'latest.release') {
